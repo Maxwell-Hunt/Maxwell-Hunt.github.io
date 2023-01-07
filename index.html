@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Maxwell Hunt</title>
+</head>
+<body>
+    <div id="front__page">
+        <canvas id="title__canvas"></canvas>
+        <nav>
+            <div id="navbar__container">
+                <div id="home__link__container">
+                    <a href="/" id="home__link">Maxwell</a>
+                </div>
+
+                <ul id="mobile__menu">
+                    <li class="mobile__menu__item"><a class="mobile__menu__link" href="#about__section">About</a></li>
+                    <li class="mobile__menu__item"><a class="mobile__menu__link" href="#skills__section">Skills</a></li>
+                    <li class="mobile__menu__item"><a class="mobile__menu__link" href="#projects__section">Projects</a></li>
+                    <li class="mobile__menu__item"><a class="mobile__menu__link" href="#contact__section">Contact</a></li>
+                </ul>
+                
+                <div id="toggle__container">
+                    <a id="toggle__button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                </div>
+
+                <ul id="navbar__links">
+                    <li class="navbar__item"><a class="navbar__link" href="#about__section">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#skills__section">Skills</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#projects__section">Projects</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#contact__section">Contact</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <div id="main__title__container">
+            <div id="main__title__text">
+                <h1 id="name__text">Maxwell Hunt</h1>
+                <h3 id="subtitle">Nice to meet you! :)</h3>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="about__section">
+        <div id="about__title">
+            <img id="profile__photo" src="my_photo.jpg">
+            <h1 id="profile__subtitle">That's Me!</h1>
+        </div>
+        <p id="about__paragraph">
+            Hey, I'm Max! I'm a computer science major at the University of Waterloo looking to use my skills
+            to help you and your company out. Ever since I was very young, I have loved learning about new things
+            and, for the past five years, I have taken a special interest in Programming. I never see challenges as
+            problems but rather as opportunities to grow, learn, and improve at what I love to do. 
+        </p>
+    </div>
+
+    <div id="skills__section">
+        <div id="skills__area">
+            <h1 id="skills__title" class="hidden">Skills</h1>
+            <ul id="skills__list">
+                
+                <li class="hidden">Web Development
+                    <ul>
+                        <li>HTML, CSS & Javascript</li>
+                        <li>React & Nextjs</li>
+                        <li>Firebase</li>
+                    </ul>
+                </li>
+                <li class="hidden">C++
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Pointers</li>
+                    </ul>
+                </li>
+                <li class="hidden">Python
+                    <ul>
+                        <li>Pygame</li>
+                        <li>Sockets</li>
+                        <li>Discord API</li>
+                    </ul>
+                </li>
+                <li class="hidden">Data Structures &
+                    Algorithms
+                    <ul>
+                        <li>Over 250 problems solved on Leetcode</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="skills__design">
+            <canvas id="skills__canvas"></canvas>
+        </div>
+    </div>
+    <div id="projects__section">
+        <h1 id="projects__title">Projects</h1>
+        <div id="card__grid">
+            <a href="https://github.com/alexkmnsky/building-capacity-manager" target="_blank" class="card">
+                <h2>Building Capacity Manager</h2>
+                <img src="/icons/city.png">
+            </a>
+            <a href="https://github.com/Maxwell-Hunt/Flappy-bird-Neat" target="_blank" class="card">
+                <h2>NEAT Bird</h2>
+                <img src="/icons/neuralnet.png">
+            </a>
+            <a href="https://github.com/Maxwell-Hunt/Asteroids-Clone" target="_blank" class="card">
+                <h2>Asteroids</h2>
+                <img src="/icons/asteroid.png">
+            </a>
+            <a href="https://github.com/Maxwell-Hunt/Canadian-Computing-Competition-CCC-Solutions" target="_blank" class="card">
+                <h2>Competitive Programming</h2>
+                <img src="/icons/algo.png">
+            </a>
+        </div>
+    </div>
+    <div id="contact__section">
+        <h1 id="contact__title">Contact</h1>
+        <hr/>
+        <div id="contact__container">
+            <ul id="contact__info">
+                <li><a>max101hunt@gmail.com</a></li>
+                <li><a>647-518-8499</a></li>
+                <li><a href="https://github.com/Maxwell-Hunt">github.com/Maxwell-Hunt</a></li>
+                <li><a href="https://www.linkedin.com/in/maxwell-hunt/">linkedin.com/in/maxwell-hunt</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="landingcanvas.js"></script>
+<script src="togglecontroler.js"></script>
+<script src="skills.js"></script>
+<script src="scroll.js"></script>
+</html>
