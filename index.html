@@ -121,19 +121,25 @@
     </div>
     <div id="contact__section">
         <h1 id="contact__title">Contact</h1>
-        <ul id="contact__links">
-            <li>max101hunt@gmail.com</li>
-            <li>647-518-8499</li>
-            <li><a href="github.com/Maxwell-Hunt">Maxwell-Hunt</a></li>
-            <li><a href="https://www.linkedin.com/in/maxwell-hunt/">Linkedin Profile</a></li>
-        </ul>
-        <form>
-            <label>Name</label>
-            <input type="text">
-            <label>Message</label>
-            <input type="text">
-            <button type="submit">SEND</button>
-        </form>
+        <div id="contact__area__container">
+            <div id="contact__area">
+                <ul id="contact__links">
+                    <li class="contact__item">max101hunt@gmail.com</li>
+                    <li class="contact__item">647-518-8499</li>
+                    <li class="contact__item"><a href="github.com/Maxwell-Hunt">Maxwell-Hunt</a></li>
+                    <li class="contact__item"><a href="https://www.linkedin.com/in/maxwell-hunt/">Linkedin Profile</a></li>
+                </ul>
+                <form>
+                    <h2>Name</h2>
+                    <input type="text" placeholder="Name Here" id="name__input" class="contact__input">
+                    <h2>Email</h2>
+                    <input type="email" placeholder="example@gmail.com" id="email__input" class="contact__input">
+                    <h2>Message</h2>
+                    <textarea type="text" placeholder="Message..." id="message__input" class="contact__input"></textarea>
+                    <button type="submit" id="submit__button">SEND</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 <script src="landingcanvas.js"></script>
