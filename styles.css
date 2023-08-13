@@ -403,38 +403,15 @@ body
     margin: auto;
 }
 
-#contact__section
-{
-    background-color: rgb(9, 219, 177);
+#contact__section {
+    width: 100vw;
+    height: 100vh;
 }
 
-#contact__title
-{
-    text-align: center;
-    font-size: 3rem;
-}
-
-#contact__container
-{
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-#contact__info
-{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#contact__info li a
-{
-    margin: 2rem 1rem;
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
+#contact__title {
+    height: 20vh;
+    padding-left: 1em;
+    font-size: 5rem;
 }
 
 @media(max-width: 800px)
