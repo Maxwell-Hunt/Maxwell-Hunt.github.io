@@ -97,7 +97,7 @@ class Circle
 }
 
 var circles = [];
-var NUM_CIRCLES = Math.floor(canvas.width / 40);
+var NUM_CIRCLES = Math.floor(canvas.width / 30);
 for(let i = 0;i < NUM_CIRCLES;i++)
 {
     circles.push(new Circle(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 10 + 25));
