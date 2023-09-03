@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"></link>
     <title>Maxwell Hunt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
     <div id="front__page">
@@ -64,7 +65,6 @@
         <div id="skills__area">
             <h1 id="skills__title" class="hidden">Skills</h1>
             <ul id="skills__list">
-                
                 <li class="hidden">Languages
                     <ul>
                         <li>HTML, CSS, Javascript</li>
@@ -122,14 +122,24 @@
     </div>
     <div id="contact__section">
         <h1 id="contact__title">Contact</h1>
-        <hr/>
-        <div id="contact__container">
-            <ul id="contact__info">
-                <li><a>max101hunt@gmail.com</a></li>
-                <li><a>647-518-8499</a></li>
-                <li><a href="https://github.com/Maxwell-Hunt">github.com/Maxwell-Hunt</a></li>
-                <li><a href="https://www.linkedin.com/in/maxwell-hunt/">linkedin.com/in/maxwell-hunt</a></li>
-            </ul>
+        <div id="contact__area__container">
+            <div id="contact__area">
+                <ul id="contact__links">
+                    <li class="contact__item"><img src="Project photos/mail-icon.png">max101hunt@gmail.com</li>
+                    <li class="contact__item"><img src="Project photos/phone-icon.png">647-518-8499</li>
+                    <li class="contact__item"><img src="Project photos/github-icon.png"><a href="github.com/Maxwell-Hunt">Maxwell-Hunt</a></li>
+                    <li class="contact__item"><img src="Project photos/linkedin-icon.png"><a href="https://www.linkedin.com/in/maxwell-hunt/">Linkedin Profile</a></li>
+                </ul>
+                <div id="contact__form">
+                    <h2>Name</h2>
+                    <input type="text" placeholder="Name Here" id="name__input" class="contact__input">
+                    <h2>Email</h2>
+                    <input type="email" placeholder="example@gmail.com" id="email__input" class="contact__input">
+                    <h2>Message</h2>
+                    <textarea type="text" placeholder="Message..." id="message__input" class="contact__input"></textarea>
+                    <button onclick="submitContact()" type="submit" id="submit__button">SEND</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -137,4 +147,5 @@
 <script src="togglecontroler.js"></script>
 <script src="skills.js"></script>
 <script src="scroll.js"></script>
+<script src="contact.js"></script>
 </html>
