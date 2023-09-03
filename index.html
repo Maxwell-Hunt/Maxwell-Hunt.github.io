@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"></link>
     <title>Maxwell Hunt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
     <div id="front__page">
@@ -129,15 +130,15 @@
                     <li class="contact__item"><img src="Project photos/github-icon.png"><a href="github.com/Maxwell-Hunt">Maxwell-Hunt</a></li>
                     <li class="contact__item"><img src="Project photos/linkedin-icon.png"><a href="https://www.linkedin.com/in/maxwell-hunt/">Linkedin Profile</a></li>
                 </ul>
-                <form>
+                <div id="contact__form">
                     <h2>Name</h2>
                     <input type="text" placeholder="Name Here" id="name__input" class="contact__input">
                     <h2>Email</h2>
                     <input type="email" placeholder="example@gmail.com" id="email__input" class="contact__input">
                     <h2>Message</h2>
                     <textarea type="text" placeholder="Message..." id="message__input" class="contact__input"></textarea>
-                    <button type="submit" id="submit__button">SEND</button>
-                </form>
+                    <button onclick="submitContact()" type="submit" id="submit__button">SEND</button>
+                </div>
             </div>
         </div>
     </div>
@@ -146,4 +147,5 @@
 <script src="togglecontroler.js"></script>
 <script src="skills.js"></script>
 <script src="scroll.js"></script>
+<script src="contact.js"></script>
 </html>
