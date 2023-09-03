@@ -3,7 +3,8 @@ function submitContact() {
     let emailElement = document.getElementById('email__input');
     let messageElement = document.getElementById('message__input');
     let submission = {'name': nameElement.value, 'email': emailElement.value, 'message': messageElement.value}
-    $.post('http://3.96.178.157:8080', JSON.stringify(submission),
+    let ec2IP = '3.96.178.157';
+    $.post('http://' + ec2IP + ':8080', JSON.stringify(submission),
     response => {
         console.log("Success!!!");
     });
