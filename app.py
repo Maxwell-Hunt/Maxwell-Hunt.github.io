@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, jsonify
 from email.message import EmailMessage
 import ssl
 import smtplib
@@ -20,11 +20,16 @@ def submit_email(name, email, message):
         smtp.login(email_sender, email_password)
         smtp.sendmail(email_sender, email_receiver, message_ob.as_string())
 
-@app.route('/', methods=["POST"])
+@app.route('/home')
+@app.route('/')
 def main():
+    return render_template('index.html')
+
+@app.route('/contact', methods=["POST"])
+def handle_contact():
     data = request.get_json(force=True)
     submit_email(data['name'], data['email'], data['message'])
     return jsonify({})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run()
