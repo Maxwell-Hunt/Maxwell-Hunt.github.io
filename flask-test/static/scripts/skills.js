@@ -32,16 +32,16 @@ class Icon
 
 let radius = Math.min(skillsCanvas.width/2, skillsCanvas.height/2) - 120;
 let myImages = [
-    new Icon(radius, 0, "/icons/binarytree.png"),
-    new Icon(radius, Math.PI*2/5, "/icons/c++.png"),
-    new Icon(radius, Math.PI*4/5, "/icons/github.png"),
-    new Icon(radius, Math.PI*6/5, "/icons/pythonicon.png"),
-    new Icon(radius, Math.PI*8/5, "/icons/web-development.svg")
+    new Icon(radius, 0, "static/images/binarytree.png"),
+    new Icon(radius, Math.PI*2/5, "static/images/c++.png"),
+    new Icon(radius, Math.PI*4/5, "static/images/github.png"),
+    new Icon(radius, Math.PI*6/5, "static/images/pythonicon.png"),
+    new Icon(radius, Math.PI*8/5, "static/images/web-development.svg")
 ];
 
 function drawSkills()
 {
-    skillsContext.fillStyle = "white";//"#09dbb1";
+    skillsContext.fillStyle = "white";
     skillsContext.fillRect(0, 0, skillsCanvas.width, skillsCanvas.height);
     for(let image of myImages)
     {
@@ -60,10 +60,10 @@ window.addEventListener("resize", () =>
     skillsCanvas.height = window.innerHeight;
     let radius = Math.min(skillsCanvas.width/2, skillsCanvas.height/2) - 120;
     myImages = [
-        new Icon(radius, 0, "/icons/binarytree.png"),
-        new Icon(radius, Math.PI*2/5, "/icons/c++.png"),
-        new Icon(radius, Math.PI*4/5, "/icons/github.png"),
-        new Icon(radius, Math.PI*6/5, "/icons/pythonicon.png"),
-        new Icon(radius, Math.PI*8/5, "/icons/web-development.svg")
+        new Icon(radius, 0, "static/images/binarytree.png"),
+        new Icon(radius, Math.PI*2/5, "static/images/c++.png"),
+        new Icon(radius, Math.PI*4/5, "static/images/github.png"),
+        new Icon(radius, Math.PI*6/5, "static/images/pythonicon.png"),
+        new Icon(radius, Math.PI*8/5, "static/images/web-development.svg")
     ];
 });

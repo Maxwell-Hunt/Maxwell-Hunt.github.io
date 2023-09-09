@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}"></link>
     <title>Maxwell Hunt</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
@@ -50,7 +50,7 @@
 
     <div id="about__section">
         <div id="about__title">
-            <img id="profile__photo" src="my_photo.jpg">
+            <img id="profile__photo" src="{{url_for('static', filename='images/my_photo.jpg')}}">
             <h1 id="profile__subtitle">That's Me!</h1>
         </div>
         <p id="about__paragraph">
@@ -100,23 +100,23 @@
         <div id="card__grid">
             <a href="https://devpost.com/software/building-capacity-manager" target="_blank" class="card">
                 <h2>Building Capacity Manager</h2>
-                <img src="/icons/city.png">
+                <img src="{{url_for('static', filename='images/city.png')}}">
             </a>
             <a href="https://github.com/Maxwell-Hunt/Flappy-bird-Neat" target="_blank" class="card">
                 <h2>NEAT Bird</h2>
-                <img src="/icons/neuralnet.png">
+                <img src="{{url_for('static', filename='images/neuralnet.png')}}">
             </a>
             <a href="https://github.com/Maxwell-Hunt/Asteroids-Clone" target="_blank" class="card">
                 <h2>Asteroids</h2>
-                <img src="/icons/asteroid.png">
+                <img src="{{url_for('static', filename='images/asteroid.png')}}">
             </a>
             <a href="https://devpost.com/software/libre-quiz" target="_blank" class="card">
                 <h2>LibreQuiz</h2>
-                <img src="/icons/poll.png">
+                <img src="{{url_for('static', filename='images/poll.png')}}">
             </a>
             <a href="https://github.com/SSSCodingClub/BlackjackDiscordBot" target="_blanck" class="card">
                 <h2>Blackjack Discord Bot</h2>
-                <img src="/icons/cards.png">
+                <img src="{{url_for('static', filename='images/cards.png')}}">
             </a>
         </div>
     </div>
@@ -125,10 +125,10 @@
         <div id="contact__area__container">
             <div id="contact__area">
                 <ul id="contact__links">
-                    <li class="contact__item"><img src="Project photos/mail-icon.png">max101hunt@gmail.com</li>
-                    <li class="contact__item"><img src="Project photos/phone-icon.png">647-518-8499</li>
-                    <li class="contact__item"><img src="Project photos/github-icon.png"><a href="github.com/Maxwell-Hunt">Maxwell-Hunt</a></li>
-                    <li class="contact__item"><img src="Project photos/linkedin-icon.png"><a href="https://www.linkedin.com/in/maxwell-hunt/">Linkedin Profile</a></li>
+                    <li class="contact__item"><img src="{{url_for('static', filename='images/mail-icon.png')}}">max101hunt@gmail.com</li>
+                    <li class="contact__item"><img src="{{url_for('static', filename='images/phone-icon.png')}}">647-518-8499</li>
+                    <li class="contact__item"><img src="{{url_for('static', filename='images/github-icon.png')}}"><a href="github.com/Maxwell-Hunt">Maxwell-Hunt</a></li>
+                    <li class="contact__item"><img src="{{url_for('static', filename='images/linkedin-icon.png')}}"><a href="https://www.linkedin.com/in/maxwell-hunt/">Linkedin Profile</a></li>
                 </ul>
                 <div id="contact__form">
                     <h2>Name</h2>
@@ -143,9 +143,9 @@
         </div>
     </div>
 </body>
-<script src="landingcanvas.js"></script>
-<script src="togglecontroler.js"></script>
-<script src="skills.js"></script>
-<script src="scroll.js"></script>
-<script src="contact.js"></script>
+<script src="{{url_for('static', filename='scripts/landingcanvas.js')}}"></script>
+<script src="{{url_for('static', filename='scripts/togglecontroler.js')}}"></script>
+<script src="{{url_for('static', filename='scripts/skills.js')}}"></script>
+<script src="{{url_for('static', filename='scripts/scroll.js')}}"></script>
+<script src="{{url_for('static', filename='scripts/contact.js')}}"></script>
 </html>
